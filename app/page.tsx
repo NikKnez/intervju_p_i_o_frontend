@@ -22,7 +22,7 @@ export default function AuroraBackgroundDemo() {
         Dobrodošli u projekat IntervjuPiO!
         </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-        IntervjuPiO Datoteke (automatsko preuzimanje klikom na željeni dokument).
+        Datoteke (automatsko preuzimanje klikom na željeni dokument).
         </div>
         <FileList />
       </motion.div>
