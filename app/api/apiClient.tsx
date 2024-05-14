@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:8080', // Base URL for the backend
+    baseURL: 'https://intervjupio.onrender.com', // Base URL for the backend
     // Add headers and other configurations as needed
 });
 
