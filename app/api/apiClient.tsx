@@ -3,15 +3,6 @@ import axios from 'axios';
 const apiClient = axios.create({
     baseURL: 'https://intervjupio-z1oc.onrender.com',
     // baseURL: 'http://localhost:8080', // Base URL for the backend
-    // Add headers and other configurations as needed
-    headers: {
-        post: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Headers":
-                "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
-        }
-    }
 });
 
 // Function to get the list of files
