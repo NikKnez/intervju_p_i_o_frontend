@@ -3,6 +3,10 @@ import axios from 'axios';
 const apiClient = axios.create({
     baseURL: 'https://intervjupio-z1oc.onrender.com',
     // baseURL: 'http://localhost:8080', // Base URL for the backend
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    withCredentials: true,
 });
 
 // Function to get the list of files
@@ -17,7 +21,7 @@ export const getFiles = async () => {
 };
 
 // Function to download a file by fileId
-export const downloadFile = async (fileId: any) => {
+export const downloadFile = async (fileId: any) => {    
     try {
         // Make a GET request to download the file
         const response = await apiClient.get(`/file/download/${fileId}`, {
