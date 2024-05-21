@@ -1,14 +1,11 @@
 import axios from 'axios';
 
-const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || 'https://intervjupio-z1oc.onrender.com';
+//const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || 'https://intervjupio-z1oc.onrender.com';
 
 const apiClient = axios.create({
-    baseURL: apiBaseUrl,
-    // baseURL: 'http://localhost:8080', // Base URL for the backend
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    withCredentials: true,
+    baseURL: 'https://intervjupio-z1oc.onrender.com',
+     //baseURL: 'http://localhost:8080', // Base URL for the backend
+    
 });
 
 // Function to get the list of files
